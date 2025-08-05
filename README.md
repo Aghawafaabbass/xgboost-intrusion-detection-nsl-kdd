@@ -1,8 +1,12 @@
 Enhancing Intrusion Detection in Cybersecurity using XGBoost: A Performance Analysis on the NSL-KDD Dataset
 
+Repository Name: Aghawafaabbass/xgboost-intrusion-detection-nsl-kdd
+
+
+
 📌 Abstract
 
-The escalating complexity and frequency of cyber threats necessitate advanced Intrusion Detection Systems (IDS) to protect network integrity. This repository presents a robust IDS built using XGBoost on the NSL-KDD dataset, an improved and balanced version of the KDD'99 dataset. By leveraging XGBoost’s ability to handle high-dimensional and imbalanced data, this project achieves strong performance in detecting network intrusions. The implementation includes thorough data preprocessing, model training, evaluation, and feature importance analysis, making it suitable for real-time cybersecurity applications and interpretable for security analysts.
+The growing sophistication of cyber threats demands advanced Intrusion Detection Systems (IDS) to safeguard network integrity. This repository presents a robust IDS built using XGBoost on the NSL-KDD dataset, an improved and balanced version of the KDD'99 dataset. Leveraging XGBoost's ability to handle complex and imbalanced data, this project achieves high accuracy, precision, and interpretability. The implementation includes comprehensive data preprocessing, model training, evaluation, and feature importance analysis, making it ideal for real-time cybersecurity applications.
 
 🔑 Key Results
 
@@ -36,33 +40,37 @@ The escalating complexity and frequency of cyber threats necessitate advanced In
 
 🧠 Explainability: Feature importance and SHAP analysis for transparent decision-making
 
+
+
 🧠 Key Contributions
 
 
 
 
 
-Efficient IDS Implementation: A scalable XGBoost-based IDS optimized for the NSL-KDD dataset, suitable for enterprise and real-time deployments.
+Efficient IDS Design: A scalable XGBoost-based IDS optimized for the NSL-KDD dataset, suitable for enterprise and real-time deployments.
 
 
 
-Comprehensive Preprocessing: Includes label encoding, feature scaling, and removal of irrelevant features (e.g., num_outbound_cmds) to enhance model performance.
+Comprehensive Preprocessing: Includes label encoding, feature scaling, and removal of irrelevant features (e.g., num_outbound_cmds).
 
 
 
-Interpretability: Detailed feature importance and SHAP analysis to provide actionable insights and build trust in security applications.
+Interpretability: Detailed feature importance and SHAP analysis to provide actionable insights for security analysts.
 
 
 
-Superior Performance: Outperforms traditional models like Decision Trees, Random Forests, and SVMs across key metrics.
+Superior Performance: Outperforms traditional models like Decision Trees, Random Forests, and SVMs in key metrics.
 
 
 
-Robustness: Maintains performance under noise and missing data, with <3% degradation in ablation tests.
+Robustness: Maintains performance under noise and missing data (<3% degradation in ablation tests).
 
 
 
 Error Analysis: Identifies misclassification patterns (e.g., nmap, guess_passwd) to guide future improvements.
+
+
 
 📈 Results Summary
 
@@ -138,7 +146,9 @@ PR-AUC
 
 0.97
 
-The model demonstrates balanced detection of normal and attack traffic, with a high recall (0.97) for normal instances and high precision (0.97) for attack instances. A slight overfitting issue (training accuracy: 99.99%) suggests opportunities for optimization, such as regularization or early stopping. The confusion matrix reveals a 32% false negative rate for attack instances, highlighting challenges with covert attack patterns.
+The model excels in detecting both normal and attack traffic, with high recall (0.97) for normal instances and high precision (0.97) for attack instances. A slight overfitting issue (training accuracy: 99.99%) suggests opportunities for optimization via regularization or early stopping. The confusion matrix reveals a 32% false negative rate for attack instances, highlighting challenges with covert attack patterns.
+
+
 
 🔬 Visualizations
 
@@ -150,7 +160,7 @@ Confusion Matrix: Visualizes True Positives, False Positives, False Negatives, a
 
 
 
-ROC Curve: Depicts the trade-off between True Positive Rate and False Positive Rate, with AUC ≈ 0.89 (roc_curve.png).
+ROC Curve: Shows True Positive Rate vs. False Positive Rate, with AUC ≈ 0.89 (roc_curve.png).
 
 
 
@@ -164,21 +174,23 @@ Feature Importance: Ranks top 15 features, including src_bytes, protocol_type, d
 
 Learning Curve: Compares training and test accuracy to diagnose overfitting (learning_curve.png).
 
+
+
 🧪 Future Work
 
 
 
 
 
-Real-Time Detection: Optimize for streaming data using incremental learning or online gradient boosting.
+Real-Time Detection: Optimize for streaming data with incremental learning or online gradient boosting.
 
 
 
-Cross-Dataset Validation: Evaluate on modern datasets like CIC-IDS2017, UNSW-NB15, or TON_IoT.
+Cross-Dataset Validation: Test on modern datasets like CIC-IDS2017, UNSW-NB15, or TON_IoT.
 
 
 
-Hybrid Models: Combine XGBoost with deep learning architectures (e.g., LSTM, CNN) for temporal and sequence-based detection.
+Hybrid Models: Integrate XGBoost with LSTM or CNN for temporal and sequence-based detection.
 
 
 
@@ -186,7 +198,7 @@ Advanced Feature Engineering: Incorporate temporal aggregates, statistical featu
 
 
 
-Class Imbalance Handling: Explore adaptive sampling, cost-sensitive learning, or focal loss to improve detection of rare attack types (e.g., U2R, R2L).
+Class Imbalance Handling: Use adaptive sampling, cost-sensitive learning, or focal loss for rare attack types (e.g., U2R, R2L).
 
 
 
@@ -194,7 +206,9 @@ Edge Deployment: Apply model compression and quantization for resource-constrain
 
 
 
-Enhanced Explainability: Integrate SHAP, LIME, or counterfactual explanations into deployment dashboards for real-time decision support.
+Enhanced Explainability: Integrate SHAP, LIME, or counterfactual explanations into deployment dashboards.
+
+
 
 📂 File Description
 
@@ -218,7 +232,7 @@ XGBoost_IDS_NSLKDD.ipynb
 
 
 
-Jupyter Notebook with preprocessing, model training, evaluation, and visuals
+Jupyter Notebook with preprocessing, training, and evaluation
 
 
 
@@ -270,6 +284,8 @@ learning_curve.png
 
 Learning curve showing training vs. test accuracy
 
+
+
 📥 Dataset Access
 
 The NSL-KDD dataset (KDDTrain+.txt and KDDTest+.txt) is used in this project. Download it from:
@@ -279,6 +295,8 @@ The NSL-KDD dataset (KDDTrain+.txt and KDDTest+.txt) is used in this project. Do
 
 
 University of New Brunswick NSL-KDD Dataset
+
+
 
 🚀 How to Run This Project
 
@@ -328,11 +346,19 @@ jupyter notebook
 
 Open XGBoost_IDS_NSLKDD.ipynb and run the cells after placing the NSL-KDD dataset files in the project directory.
 
+
+
 📌 Index Terms
 
 XGBoost, Intrusion Detection System (IDS), NSL-KDD Dataset, Network Security, Machine Learning, Ensemble Learning, Feature Importance, Explainable AI, Cybersecurity, Anomaly Detection, Supervised Learning
 
+
+
 👨‍🏫 Authors
+
+
+
+
 
 Agha Wafa Abbas
 Lecturer, School of Computing, Arden University, UK
@@ -340,19 +366,38 @@ Lecturer, IVY College of Management Sciences, Pakistan
 📧 awabbas@arden.ac.uk | wafa.abbas.lhr@rootsivy.edu.pk
 
 
+
+Muhammad Awais Malik
+Deputy Head, School of Computing, ICMS
+📧 awaismalik3577@gmail.com
+
+
+
+Hassan Bashir
+Lecturer, Computer Science
+📧 hassan.bashir@umt.edu.pk
+
+
+
 📜 Citation & Publication
 
 This project is part of a published research paper:
 
-Agha, W. A. (2025). Enhancing Intrusion Detection in Cybersecurity using XGBoost: A Performance Analysis on the NSL-KDD Dataset. (https://doi.org/10.5281/zenodo.16737594)
+🔗 Agha, W. A., Malik, M. A., & Bashir, H. (2025). Enhancing Intrusion Detection in Cybersecurity using XGBoost: A Performance Analysis on the NSL-KDD Dataset. [Insert publication link or DOI if available]
+
+
 
 🙏 Acknowledgements
 
-We express gratitude to the University of New Brunswick for maintaining the NSL-KDD dataset and the open-source community for their contributions to XGBoost, Scikit-learn, Pandas, NumPy, Matplotlib, and SHAP libraries, which enabled this research.
+We thank the University of New Brunswick for maintaining the NSL-KDD dataset and the open-source community for their contributions to XGBoost, Scikit-learn, Pandas, NumPy, Matplotlib, and SHAP libraries, which made this research possible.
+
+
 
 ℹ️ About
 
 This repository implements a scalable, interpretable, and high-performing Intrusion Detection System using XGBoost on the NSL-KDD dataset. It is designed for researchers, cybersecurity professionals, and enthusiasts interested in machine learning-driven network security solutions.
+
+
 
 📄 License
 
