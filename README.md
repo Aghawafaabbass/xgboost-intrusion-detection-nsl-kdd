@@ -104,42 +104,41 @@ Download the NSL-KDD dataset:
 🔗 [University of New Brunswick – NSL-KDD Dataset](https://www.kaggle.com/datasets/hassan06/nslkdd)  
 (Files: `KDDTrain+.txt`, `KDDTest+.txt`)
 
----
+--
 
 ## 🚀 How to Run the Project
 
 ### ✅ Option 1: Run in Google Colab
 
-1. Open in Colab:
-https://colab.research.google.com/github/Aghawafaabbass/xgboost-intrusion-detection-nsl-kdd/blob/main/XGBoost_IDS_NSLKDD.ipynb
-
-yaml
-Copy
-Edit
-2. Upload `KDDTrain+.txt` and `KDDTest+.txt`  
-3. Run all cells (`Runtime > Run All` or `Ctrl+F9`)
+1. Open the notebook in Colab:  
+   🔗 [Run in Google Colab](https://colab.research.google.com/github/Aghawafaabbass/xgboost-intrusion-detection-nsl-kdd/blob/main/XGBoost_IDS_NSLKDD.ipynb)
+2. Upload the dataset files:  
+   - `KDDTrain+.txt`  
+   - `KDDTest+.txt`  
+3. Run all cells:  
+   - `Runtime > Run All` or press `Ctrl+F9`
 
 ---
 
 ### ✅ Option 2: Run Locally
 
-#### Requirements
+#### 🛠️ Requirements
 
 - Python 3.7+  
-- Jupyter Notebook  
+- Jupyter Notebook or JupyterLab
 
-#### Install Libraries
+#### 📦 Install Libraries
 
 ```bash
 pip install pandas numpy xgboost matplotlib seaborn scikit-learn
-Launch Notebook
+▶️ Launch Notebook
 bash
 Copy
 Edit
 jupyter notebook
-Open XGBoost_IDS_NSLKDD.ipynb and run the cells after placing the dataset files.
+Open XGBoost_IDS_NSLKDD.ipynb and run the cells after placing the dataset files (KDDTrain+.txt, KDDTest+.txt) in the same directory.
 
-📌 Index Terms
+🏷️ Index Terms
 XGBoost, Intrusion Detection System (IDS), NSL-KDD,
 Network Security, Machine Learning, Explainable AI,
 Cybersecurity, Anomaly Detection, Supervised Learning
@@ -150,20 +149,17 @@ Lecturer, School of Computing, Arden University, UK
 Lecturer, IVY College of Management Sciences, Pakistan
 📧 awabbas@arden.ac.uk | wafa.abbas.lhr@rootsivy.edu.pk
 
-Muhammad Awais Malik
-Deputy Head, School of Computing, ICMS
-📧 awaismalik3577@gmail.com
-
-Hassan Bashir
-Lecturer, Computer Science
-📧 hassan.bashir@umt.edu.pk
 
 📜 Citation
 Agha Wafa, A. (2025). Enhancing Intrusion Detection in Cybersecurity using XGBoost: A Performance Analysis on the NSL-KDD Dataset (1.0). Zenodo.
-[https://doi.org/10.5281/zenodo.16737594]
+🔗 DOI: 10.5281/zenodo.16737594
 
 🙏 Acknowledgements
-Thanks to the University of New Brunswick for maintaining the NSL-KDD dataset, and to the developers of open-source libraries:
+Special thanks to:
+
+University of New Brunswick – for maintaining the NSL-KDD dataset
+
+Developers of open-source libraries:
 
 XGBoost
 
@@ -178,14 +174,15 @@ Matplotlib
 SHAP
 
 ℹ️ About
-This project delivers a scalable, interpretable, and high-performing Intrusion Detection System using XGBoost and is intended for:
+This project delivers a scalable, interpretable, and high-performing Intrusion Detection System using XGBoost on the NSL-KDD dataset. It is intended for:
 
-Researchers
+🔍 Researchers
 
-Cybersecurity professionals
+🛡️ Cybersecurity professionals
 
-ML enthusiasts
+🤖 Machine Learning enthusiasts
 
 📄 License
 © 2025 Agha Wafa Abbas — All rights reserved.
+
 
