@@ -1,6 +1,6 @@
 # 🔐 Enhancing Intrusion Detection in Cybersecurity using XGBoost  
 ## A Performance Analysis on the NSL-KDD Dataset  
-📁 **Repository**: [Aghawafaabbass/xgboost-intrusion-detection-nsl-kdd](https://github.com/Aghawafaabbass/xgboost-intrusion-detection-nsl-kdd)
+
 
 ---
 
@@ -101,7 +101,7 @@ Leveraging XGBoost's strength in handling complex and imbalanced data, the proje
 
 Download the NSL-KDD dataset:
 
-🔗 [University of New Brunswick – NSL-KDD Dataset](https://www.unb.ca/cic/datasets/nsl.html)  
+🔗 [University of New Brunswick – NSL-KDD Dataset](https://www.kaggle.com/datasets/hassan06/nslkdd)  
 (Files: `KDDTrain+.txt`, `KDDTest+.txt`)
 
 ---
@@ -159,9 +159,8 @@ Lecturer, Computer Science
 📧 hassan.bashir@umt.edu.pk
 
 📜 Citation
-Agha, W. A., Malik, M. A., & Bashir, H. (2025).
-Enhancing Intrusion Detection in Cybersecurity using XGBoost: A Performance Analysis on the NSL-KDD Dataset.
-[DOI or Link – Insert here]
+Agha Wafa, A. (2025). Enhancing Intrusion Detection in Cybersecurity using XGBoost: A Performance Analysis on the NSL-KDD Dataset (1.0). Zenodo.
+[https://doi.org/10.5281/zenodo.16737594]
 
 🙏 Acknowledgements
 Thanks to the University of New Brunswick for maintaining the NSL-KDD dataset, and to the developers of open-source libraries:
